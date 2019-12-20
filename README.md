@@ -1,10 +1,10 @@
 # bank-transactions
 API to make transactions between bank accounts
 
-##Main goal:
+## Main goal:
 Create bank transactions api ensuring no money loss. Optimistic locking
 
-###Created using:
+### Created using:
 <pre>
 Java spark
 jooq
@@ -14,7 +14,7 @@ lombook
 H2 in memory DB
 </pre>
 
-####guide to run app: 
+#### guide to run app: 
 <pre>
 mvn package
 java -Dport=8000 -jar target/launchMe.jar 
@@ -22,14 +22,14 @@ java -Dport=8000 -jar target/launchMe.jar
 
 application running on : localhost:8000
 
-####GET api to view data:
+#### GET api to view data:
 <pre>
 
 http://localhost:8000/accounts
 http://localhost:8000/transactions
 </pre>
 
-####to make transaction:
+#### to make transaction:
 request:
 <pre>
 
@@ -62,7 +62,7 @@ response:
 {"id":9,"owner":"myName","balance":1000000}
 </pre>
 
-###status codes
+### status codes
 <pre>
 200 - ok
 201 - created
